@@ -4,7 +4,7 @@ import { Button } from 'react-native'
 
 import Header from './Header'
 
-class HomeScreen extends React.Component {
+class VehicleScreen extends React.Component {
     static navigationOptions = {
       title: 'White Stallion'
     };
@@ -14,12 +14,16 @@ class HomeScreen extends React.Component {
         <>
         <Header />
         <Button
-          title="Go to your profile"
-          onPress={() => navigate('Profile')}
+          title="Miles Breakdown Report"
+          onPress={() => navigate('MilesReport')}
+        />
+        <Button
+          title="Service Log"
+          onPress={() => navigate('ServiceLog')}
         />
         </>
       );
     }
   }
 
-  export default HomeScreen
+  export default VehicleScreen

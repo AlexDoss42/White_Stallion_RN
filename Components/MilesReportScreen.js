@@ -2,19 +2,24 @@ import React from 'react'
 
 import { Button } from 'react-native'
 
-class ProfileScreen extends React.Component {
+import Header from './Header'
+
+class MilesReportScreen extends React.Component {
     static navigationOptions = {
-      title: `Your Profile`,
+      title: 'Miles Breakdown'
     };
     render() {
       const {navigate} = this.props.navigation;
       return (
+        <>
+        <Header />
         <Button
-          title="THE WHITE STALLION"
+          title="Back to Vehicle"
           onPress={() => navigate('Vehicle')}
         />
+        </>
       );
     }
   }
 
-  export default ProfileScreen
+  export default MilesReportScreen
